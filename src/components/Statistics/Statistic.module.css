@@ -1,0 +1,42 @@
+.title{
+    color: rgb(92, 113, 113);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(253, 254, 255);
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.statList{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    
+
+}
+.item{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100%/4);
+    border:1px solid rgb(203, 196, 196);
+    padding: 10px;
+    background-color: rgb(92, 113, 113);;
+}
+
+.label{
+    color:aliceblue;
+    font-size: 14px;
+}
+
+.percentage{
+    color:aliceblue;
+    font-size: 20px;
+}

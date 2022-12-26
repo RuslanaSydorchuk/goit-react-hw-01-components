@@ -1,27 +1,27 @@
 import PropTypes from 'prop-types';
-import css from './TransactionHistory.css'
+import css from './TransactionHistory.module.css'
 
 export default function TransactionHistory ({items}){
     return(
         <table className={css.transactionHistory}>
-  <thead className= {css.tableHead}>
-    <tr className={css.tableHeadRow}>
-      <th className= {css.tableHeadCell}>Type</th>
-      <th className= {css.tableHeadCell}>Amount</th>
-      <th className= {css.tableHeadCell}>Currency</th>
-    </tr>
-  </thead>
+          <thead className= {css.tableHead}>
+            <tr className={css.tableHeadRow}>
+              <th className= {css.tableHeadCell}>Type</th>
+              <th className= {css.tableHeadCell}>Amount</th>
+              <th className= {css.tableHeadCell}>Currency</th>
+            </tr>
+          </thead>
 
-  <tbody className={css.tableBody}>
-    {items.map(({id, type, amount, currency})=>
-    <tr className= {css.tableRow} key = {id}>
-    <td className = {css.type}>{type}</td>
-    <td className = {css.amount}>{amount}</td>
-    <td className = {css.currency}>{currency}</td>
-    </tr>
-    )}
-  </tbody>
-</table>
+          <tbody className={css.tableBody}>
+            {items.map(({id, type, amount, currency})=>
+            <tr className= {css.tableRow} key = {id}>
+            <td className = {css.tableData}>{type}</td>
+            <td className = {css.tableData}>{amount}</td>
+            <td className = {css.tableData}>{currency}</td>
+            </tr>
+            )}
+          </tbody>
+        </table>
     )
 };
 
