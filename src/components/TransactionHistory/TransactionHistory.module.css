@@ -4,7 +4,7 @@
 
 .tableHeadCell{
     color: rgb(235, 243, 250);
-    background-color: rgb(122, 175, 255);
+    background-color: rgb(169, 221, 247);
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
@@ -22,7 +22,7 @@
     background-color: rgb(253, 254, 255);
 }
 .tableRow:nth-child(2n){
-    background-color: rgb(244, 242, 242);
+    background-color: rgb(235, 247, 251);
 }
 
 .tableData{
